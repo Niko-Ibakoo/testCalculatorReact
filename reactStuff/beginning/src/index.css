@@ -1,0 +1,140 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*main card info*/
+.card{
+    text-align: center;
+    color: #FFF;
+    background-color: #1A1B21;  
+    width: 317px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+/*info section*/
+
+.hero{
+    width: 100%;
+}
+.linkedin-btn{
+    background-color: #5093E2;
+    color: #fff;
+    margin-left: 10px;
+    width: 115px;
+    height:34px ;
+    border-radius: 6px;
+}
+.email-btn{
+    background-color:#FFF;
+    color:#1A1B21 ;
+    width: 115px;
+    height: 34px;
+    border-radius: 6px;
+}
+
+/*about-section*/
+
+.about-cnt{
+    width: 247px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sub-title{
+    text-align: left;
+    margin-bottom:10px;
+    padding-left: 10px;
+}
+.about-cnt p{
+    font-size: 10px;
+    text-align: left;
+    color: #DCDCDC;
+    padding-left: 10px;
+}
+
+/*footer section*/
+
+.footer-cnt{
+    height: 64px;
+    display: flex;
+    background-color: #161619;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+}
+.footer-cnt a {
+    text-decoration: none;
+    color: #918E9B;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    padding: 0px 10px
+}
+
+
+:root{
+    --light-blue:#61dafb;
+    --darker:#21222A;
+    --blue:#282d35;
+    --txt-color:#deebf8;
+}
+
+.logo{
+    width:30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: var(--darker);
+    height: 90px;
+
+}
+main{
+    background-image: url(./img/reactjs-icon\ 2.png);
+    background-repeat: no-repeat;
+    background-position:right 80%;
+}
+
+.nav h3{
+    margin-right:auto ;
+    padding-left: 10px;
+    color: var(--light-blue);
+    font-size: 22px;
+}
+.nav h4{
+    padding-right:10px;
+    color:#deebf8;
+    font-weight: 600;
+}
+.title{
+    color:#fff;
+    margin-left: 60px;
+    padding-top:50px;
+}
+.list{
+    color: #fff;
+    margin-left: 60px;
+}
+
+.list li::marker{
+    color:var(--light-blue);
+    font-size: 1.4rem;
+
+}
+.nav-items{
+    display: flex;
+    list-style:none;
+}
+.nav-items li{
+    padding: 5px;
+}
+
+
+.footer{
+    background-color: grey;
+    color: #fff;
+    justify-items: center;
+    padding: 30px 0;
+}
+

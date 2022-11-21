@@ -1,0 +1,84 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+}
+#date ,#amount{
+  width: 20%;
+}
+#name{
+  width: 50%;
+  margin-bottom: 30px;
+}
+h1{
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+label{
+  font-weight: bold;
+}
+h3{
+  color: rgb(4, 143, 4);
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+input{
+  text-align: left;
+  width: auto;
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 8px;
+}
+
+.add{
+  color: white;
+  background-color: rgb(4, 143, 4);
+  border-radius: 8px;
+  width: 109px;
+  height: 40px;
+  margin-top: 30px;
+  border:1px solid rgb(99, 255, 99);
+  cursor: pointer;
+}
+.add:hover{
+  background-color: rgb(6, 173, 6); ;
+}
+th ,td{
+  border: 1px solid black;
+  text-align: left;
+  height: 40px;
+  
+}
+table{
+  
+  margin-top: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+table td{
+  background-color: rgb(238, 238, 238);
+  padding-left: 10px;
+  border:none;
+}
+th{
+  width: 250px;
+  color: rgb(0, 0, 0);
+  border:1px solid rgb(214, 214, 214);
+}
+.delete{
+ margin-top: 10px;
+  width: 20px;
+  height: 20px ;
+  float: right;
+  border-radius: 5px;
+  bottom: 25px;
+}
+.delete:hover{
+  color: rgb(214, 214, 214);
+  background-color: rgb(212, 36, 36);
+}
