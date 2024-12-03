@@ -1,0 +1,40 @@
+
+function App() {
+
+  const createDig = ()=> {
+    const digits = [];
+    for (let i = 1; i < 10; i++){
+      digits.push(<button key={i}>{i}</button>)
+ 
+    }
+    return digits;
+  }
+
+  return(
+      <div className="App">
+        <div className = "Calculator">
+          <div className="display">
+            <span>(0)</span> 0
+          </div>
+
+          <div className="operators">
+            <button>/</button>
+            <button>*</button>
+            <button>+</button>
+            <button>-</button>
+            <button>DEL</button>
+          </div>
+
+            <div className = "digits">
+               {createDig()}
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>            
+          </div>
+        </div>
+      </div>
+  );
+}
+
+
+export default App;
