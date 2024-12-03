@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(".././public/img/food-bkg.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav {
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 33px;
+  background-color: rgb(30, 30, 59);
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.max-width-800 {
+  max-width: 800px;
+}
+label {
+  margin-top: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 50px 50px;
+  background-color: transparent;
+}
+
+.title {
+  text-align: center;
+  padding: 10px 0px;
+}
+.card {
+  transition: transform 0.3s ease;
+  height: auto;
+  width: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+/*recipe page*/
+
+.container-recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+}
+
+.column-left img {
+  width: 100%;
+  height: auto;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.column-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../public/img/0\ \(1\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.description-row{
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .column-right {
+    align-items: flex-start;
+  }
+}
+
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 10px;
+  }
+
+}
+
+/*animation*/
+.card:hover {
+  transform: translateY(-10px);
+}
+
+
